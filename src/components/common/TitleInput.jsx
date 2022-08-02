@@ -9,13 +9,13 @@ export default function TitleInput() {
 
 const StyledInput = styled.input`
         margin: 0 10px 0 10px;
-        padding-left: 10px;
-        width: 50px;
+        width: 80px;
         height: 30px;
         border-radius: 15px;
         border: none;
         color: white;
         background: #4679d6;
+        text-align: center;
         &:focus{
           outline: none;
         }

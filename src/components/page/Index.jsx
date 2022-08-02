@@ -3,8 +3,11 @@ import React from 'react';
 import styled from 'styled-components'
 import Header from 'components/common/Header';
 import TiTleInput from 'components/common/TitleInput';
-import DayInput from 'components/common/DayInput'
-import Personnel from 'components/common/Personnel'
+import NameInput from 'components/common/NameInput'
+import PersonnelInput from 'components/common/PersonnelInput'
+import TitleInput from 'components/common/TitleInput';
+import NumberInput from 'components/common/NumberInput'
+import TextArea from 'components/common/TextArea'
 
 
 function Index() {
@@ -12,11 +15,13 @@ function Index() {
         <Container>
             <Header/>
                 <Title>
-                    <TiTleInput/>이/가<TiTleInput />에게 프로젝트를 신청합니다.
+                    <TitleInput />이/가<TiTleInput />에게 프로젝트를 신청합니다.
                 </Title>
             <Content>
-                <DayInput/>
-                <Personnel/>
+                <NameInput/>
+                <PersonnelInput/>
+                <NumberInput/>
+                <TextArea/>
             </Content>
         </Container>
     );

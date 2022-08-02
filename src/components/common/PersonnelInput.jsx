@@ -2,10 +2,11 @@ import React from 'react'
 import styled from 'styled-components';
 import CheckBox from 'components/common/CheckBox'
 
-export default function DayInput(){
+export default function PersonnelSelect(){
     return(
         <Container>
-            <CheckBox/><Title>기간</Title><Input type={'text'} placeholder= "예상 기간을 입력해주세요"/>
+            <CheckBox/><Title>인원</Title>
+            <Input type={'text'} placeholder="참여 인원을 적어주세요"/>
         </Container>
     )
 };
@@ -19,7 +20,7 @@ const Container = styled.div`
     height: 20px;
 `;
 
-const Title =  styled.p`
+const Title = styled.p`
     padding-right: 20px;
     color: white;
     font-size: 15px;
@@ -27,14 +28,15 @@ const Title =  styled.p`
 `;
 
 const Input = styled.input`
-    padding-left: 8px;
     width: 200px;
     height: 30px;
     border: none;
     border-radius: 8px;
     font-size: 14px;
+    font-weight: 400;
     color: white;
     background: #4679d6;
+    text-align: center;
     &:focus{
         outline: none;
     }
