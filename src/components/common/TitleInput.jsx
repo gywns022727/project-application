@@ -1,0 +1,25 @@
+import React from 'react'
+import styled from 'styled-components';
+
+export default function TitleInput() {
+  return (  
+    <StyledInput maxLength={3}/>
+  ) 
+};
+
+const StyledInput = styled.input`
+        margin: 0 10px 0 10px;
+        padding-left: 10px;
+        width: 50px;
+        height: 30px;
+        border-radius: 15px;
+        border: none;
+        color: white;
+        background: #4679d6;
+        &:focus{
+          outline: none;
+        }
+        &::placeholder{
+          padding: 5px;
+        }
+`;
