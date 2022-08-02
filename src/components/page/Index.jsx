@@ -1,5 +1,5 @@
 import React from 'react';
-// import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components'
 import Header from 'components/common/Header';
 import GiveInput from 'components/common/GiveInput'
@@ -8,6 +8,8 @@ import NameInput from 'components/common/NameInput'
 import PersonnelInput from 'components/common/PersonnelInput'
 import NumberInput from 'components/common/NumberInput'
 import TextArea from 'components/common/TextArea'
+import Giver from 'components/common/Giver'
+import Taker from 'components/common/Taker'
 
 
 function Index() {
@@ -22,6 +24,10 @@ function Index() {
                 <PersonnelInput/>
                 <NumberInput/>
                 <TextArea/>
+                <GiveAndTake>
+                <Giver/>
+                <Taker/>
+            </GiveAndTake>
             </Content>
         </Container>
     );
@@ -53,4 +59,8 @@ const Title = styled.p`
     font-weight: 400;
     text-align: center;
 `;
+
+const GiveAndTake = styled.div`
+    
+`
 export default Index;

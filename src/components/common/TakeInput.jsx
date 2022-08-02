@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default function TakeInput() {
   return (  
-    <StyledInput maxLength={3}/>
+    <StyledInput type={'text'} maxLength={3}/>
   ) 
 };
 
