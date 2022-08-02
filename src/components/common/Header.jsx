@@ -12,6 +12,7 @@ export default function Header() {
 };
 
 const Container = styled.header`
+    margin-bottom: 10px;
     width: 100%;
     display: flex;
     justify-content: center;

@@ -39,6 +39,7 @@ const Area = styled.textarea`
     background: #4679d6;
     text-align: center;
     line-height: 40px;
+    resize: none;
     &:focus{
         outline: none;
     }

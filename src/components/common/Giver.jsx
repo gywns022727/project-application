@@ -8,7 +8,7 @@ export default function Giver() {
 }
 
 const GiveText = styled.p`
-    padding: 10px 10px 10px 50px;
+    padding: 0 10px 0 50px;
     text-align: center;
     font-style: 12px;
     font-weight: 300;

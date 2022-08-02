@@ -11,6 +11,9 @@ import TextArea from 'components/common/TextArea'
 import Giver from 'components/common/Giver'
 import Taker from 'components/common/Taker'
 
+import Precautions from 'components/common/Precautions'
+import Instruction from 'components/common/Instruction'
+
 
 
 
@@ -31,7 +34,8 @@ function Index() {
                 <Taker/>
             </GiveAndTake>
             <Btns>
-              
+              <Precautions/>
+              <Instruction/>
             </Btns>
             </Content>
         </Container>
@@ -58,7 +62,7 @@ function Index() {
     align-items: flex-start;
 `;
 const Title = styled.p`
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: white;
     font-size: 15px;
     font-weight: 400;
@@ -70,7 +74,9 @@ const GiveAndTake = styled.div`
 `
 
 const Btns = styled.div`
-    
+    width: 100%;
+    display: flex;
+    justify-content: center;
 `
 
 export default Index;

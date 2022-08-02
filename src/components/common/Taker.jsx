@@ -8,7 +8,7 @@ export default function Taker() {
 }
 
 const TakeText = styled.p`
-    padding: 10px 10px 10px 50px;
+    padding: 10px 10px 20px 50px;
     font-style: 12px;
     font-weight: 300;
     color: white;
