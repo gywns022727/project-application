@@ -2,10 +2,10 @@ import React from 'react';
 // import { useEffect, useState } from 'react';
 import styled from 'styled-components'
 import Header from 'components/common/Header';
-import TiTleInput from 'components/common/TitleInput';
+import GiveInput from 'components/common/GiveInput'
+import TakeInput from 'components/common/TakeInput'
 import NameInput from 'components/common/NameInput'
 import PersonnelInput from 'components/common/PersonnelInput'
-import TitleInput from 'components/common/TitleInput';
 import NumberInput from 'components/common/NumberInput'
 import TextArea from 'components/common/TextArea'
 
@@ -15,7 +15,7 @@ function Index() {
         <Container>
             <Header/>
                 <Title>
-                    <TitleInput />이/가<TiTleInput />에게 프로젝트를 신청합니다.
+                    <GiveInput />이/가<TakeInput />에게 프로젝트를 신청합니다.
                 </Title>
             <Content>
                 <NameInput/>
@@ -38,13 +38,13 @@ function Index() {
 
 `;
  const Content = styled.main`
-     padding: 10px;
+    padding: 10px;
     border: 1px solid #000;
     width: 400px;
     height: 400px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 `;
 const Title = styled.p`
     padding-bottom: 20px;

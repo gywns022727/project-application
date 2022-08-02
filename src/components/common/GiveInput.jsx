@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-export default function TitleInput() {
+export default function GiveInput() {
   return (  
     <StyledInput maxLength={3}/>
   ) 

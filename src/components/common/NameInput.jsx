@@ -11,11 +11,12 @@ export default function NameInput(){
 };
 
 const Container = styled.div`
+    margin-left: 20px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 300px;
     height: 20px;
 `;
 

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default function CheckBox(){
     return(
-        <Check type={'checkbox'} checked="true"/>
+        <Check type={'checkbox'} defaultChecked={true}/>
     )
 };
 
