@@ -54,5 +54,11 @@ const Btn = styled.button`
     font-weight:300;
     color: white;
     background: #7897d1;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        border: 2px solid #8ce3e9;
+    }
 `;
 

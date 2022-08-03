@@ -8,8 +8,8 @@ export default function TakeInput() {
 };
 
 const StyledInput = styled.input`
-        margin: 0 10px 0 10px;
-        width: 80px;
+        margin: 0 5px 0 10px;
+        width: 60px;
         height: 30px;
         border-radius: 15px;
         border: none;

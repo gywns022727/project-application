@@ -12,13 +12,11 @@ export default function NumberInput(){
 };
 
 const Container = styled.div`
-    margin-left: 20px;
-    /* margin-bottom: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 20px;
+    height: 30px;
 `;
 
 const Title = styled.p`
