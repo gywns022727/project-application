@@ -12,7 +12,7 @@ export default function Instruction() {
     return(
         <Popup 
         trigger={
-            <PrecautionsBtn>사용 방법</PrecautionsBtn>
+            <InstructionsBtn>사용 방법</InstructionsBtn>
         } modal 
         contentStyle={contentStyle}>
         {close => (
@@ -20,6 +20,7 @@ export default function Instruction() {
             <MainTitle>사용 방법</MainTitle>
             <hr/><br/>
             <div>
+                <Text>&nbsp;&nbsp;- 주의사항을 꼭! 읽어주세요.</Text>
                 <Text>&nbsp;&nbsp;- 이름에는 프로젝트 이름을 입력해주세요.</Text>
                 <Text>&nbsp;&nbsp;- 인원에는 프로젝트 총인원수를 입력해주세요.</Text>
                 <Text>&nbsp;&nbsp;- 번호에는 PM(Project Management)의 번호를 입력해주세요.</Text>
@@ -32,7 +33,7 @@ export default function Instruction() {
     )
 }
 
-const PrecautionsBtn = styled.button`
+const InstructionsBtn = styled.button`
     width: 100px;
     height: 30px;
     border: none;
@@ -52,7 +53,7 @@ const Box = styled.div`
     transform: translate(-50%, -50%);
     padding: 10px;
     width: 450px;
-    height: 210px;
+    height: 230px;
     border: 5px solid white;
     color: white;
     background: #4679d6;

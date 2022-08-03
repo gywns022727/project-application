@@ -12,7 +12,7 @@ export default function NameInput(){
 
 const Container = styled.div`
     margin-left: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
