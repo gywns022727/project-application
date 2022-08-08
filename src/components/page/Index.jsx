@@ -4,34 +4,27 @@ import styled from 'styled-components'
 import Header from 'components/common/Header';
 import Main from 'components/common/Main'
 import Footer from 'components/common/Footer'
-import Precautions from 'components/common/Precautions'
-import Instruction from 'components/common/Instruction'
-import Out from 'components/common/Out'
+
 function Index() {
     return(
         <Container>
-            <Can>
+            <Content>
                 <Header/>
                 <Main/>
-                <Footer/>
-            </Can>
-            <Btns>
-              <Precautions/>
-              <Instruction/>
-              <Out/>
-            </Btns>
+            </Content>
+            <Footer/>
         </Container>
     );
 }
 
-const Can = styled.main`
+const Content = styled.main`
     border: 1px solid #000;
-    padding: 20px;
-    height: 400px;
+    padding: 10px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 `
 
  const Container = styled.div`
@@ -44,14 +37,5 @@ const Can = styled.main`
     justify-content: center;
 
 `;
-
-const Btns = styled.div`
-    margin: 0 auto;
-    width: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-`
 
 export default Index;

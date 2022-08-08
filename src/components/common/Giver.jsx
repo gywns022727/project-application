@@ -8,16 +8,15 @@ export default function Giver() {
 }
 
 const GiveText = styled.p`
-    padding: 0 10px 0 10px;
     text-align: center;
     font-style: 12px;
     font-weight: 300;
     color: white;
-`
+`;
 
 const GiveData = styled.strong`
     display: inline-block;
     width: 150px;
     text-align: center;
     font-weight: 400;
-`
+`;
