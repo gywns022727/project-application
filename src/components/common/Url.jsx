@@ -1,16 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components';
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export default function Clipboard(){
     
-  const onCopyText = () => {
-    console.log(window.location.href);
-    };
+
+    const [copied, setCopied] = useState(false);
+
+    function copy() {
+      const el = document.createElement("input");
+      el.value = window.location.href;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand("copy");
+      document.body.removeChild(el);
+      setCopied(true);
+    }
 
     return(
-        <CopyToClipboard onCopy={onCopyText}>
-            <Btn onClick={()=> {}}>링크 복사하기</Btn>
+        <CopyToClipboard>
+            <Btn onClick={copy}>{copied}링크 복사하기</Btn>
         </CopyToClipboard>   
     )
 }
