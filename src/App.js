@@ -1,4 +1,3 @@
-import './App.css';
 import Index from 'components/page/Index';
 import Helmet from 'react-helmet';
 import GlobalStyles from 'styles/globalStyles';
