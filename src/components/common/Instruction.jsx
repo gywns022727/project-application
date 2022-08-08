@@ -25,6 +25,7 @@ export default function Instruction() {
                 <Text>&nbsp;&nbsp;- 인원에는 프로젝트 총인원수를 입력해주세요.</Text>
                 <Text>&nbsp;&nbsp;- 번호에는 PM(Project Management)의 번호를 입력해주세요.</Text>
                 <Text>&nbsp;&nbsp;- 설명에는 프로젝트에 관한 간단한 설명을 입력해주세요.</Text>
+                <Text>&nbsp;&nbsp;- 링크 복사하기를 클릭하면 현재 웹 사이트 URL이 복사됩니다.</Text>
             </div>
               <Close onClick={() => {close();}}>닫기</Close>
           </Box>
@@ -53,7 +54,7 @@ const Box = styled.div`
     transform: translate(-50%, -50%);
     padding: 10px;
     width: 450px;
-    height: 230px;
+    height: 250px;
     border: 5px solid white;
     color: white;
     background: #4679d6;
