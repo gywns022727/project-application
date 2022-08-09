@@ -29,7 +29,8 @@ const Head = styled.div`
 const Title = styled.h1`
     height: 50px;
     color: white;
-    font-size: 40px;
+    padding: 0 5px 0 5px;
+    font-size: 2.3rem;
     font-weight: 500;
 `;
 

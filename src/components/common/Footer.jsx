@@ -18,7 +18,7 @@ export default function Footer(){
 
 const Container = styled.div`
     margin: 0 auto;
-    height: 60px;
+    width: 100%;
 `;
 
 const Btns = styled.div`
