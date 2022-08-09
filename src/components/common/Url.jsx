@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
+import ClipboardCopy from 'react-copy-to-clipboard';
 import { toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function Clipboard(){
+    const url = window.location.href;
     const success = () => toast.success("링크 복사가 완료되었습니다.");
-
     return(
-        <div>
+        <ClipboardCopy text={url} onCopy={() => url}>
             <Btn onClick={success}>링크 복사하기</Btn>
-            
-        </div>
+        </ClipboardCopy>
     )
 }
 
@@ -32,4 +32,3 @@ const Btn = styled.button`
         border: 2px solid #8ce3e9;
     }
 `;
-

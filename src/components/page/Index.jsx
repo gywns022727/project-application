@@ -5,7 +5,6 @@ import Main from 'components/common/Main'
 import Footer from 'components/common/Footer'
 import { ToastContainer } from "react-toastify"
 
-
 function Index() {
     return(
     <>
@@ -27,16 +26,6 @@ function Index() {
     );
 }
 
-const Content = styled.main`
-    border: 1px solid #000;
-    padding: 10px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-`
-
  const Container = styled.div`
     margin: 0 auto;
     width: 500px;
@@ -45,7 +34,16 @@ const Content = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+`;
 
+const Content = styled.main`
+    border: 1px solid #000;
+    padding: 10px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 `;
 
 export default Index;
