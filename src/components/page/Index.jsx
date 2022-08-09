@@ -3,9 +3,19 @@ import styled from 'styled-components'
 import Header from 'components/common/Header';
 import Main from 'components/common/Main'
 import Footer from 'components/common/Footer'
+import { ToastContainer } from "react-toastify"
+
 
 function Index() {
     return(
+    <>
+        <ToastContainer
+            position="top-right"
+            autoClose={1000}
+            closeOnClick
+            pauseOnFocusLoss={false}
+            draggable
+        />
         <Container>
             <Content>
                 <Header/>
@@ -13,6 +23,7 @@ function Index() {
             </Content>
             <Footer/>
         </Container>
+    </>
     );
 }
 

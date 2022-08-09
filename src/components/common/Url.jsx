@@ -1,26 +1,17 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { CopyToClipboard } from "react-copy-to-clipboard";
+import { toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function Clipboard(){
-    
-
-    const [copied, setCopied] = useState(false);
-
-    function copy() {
-      const el = document.createElement("input");
-      el.value = window.location.href;
-      document.body.appendChild(el);
-      el.select();
-      document.execCommand("copy");
-      document.body.removeChild(el);
-      setCopied(true);
-    }
+    const success = () => toast.success("링크 복사가 완료되었습니다.");
 
     return(
-        <CopyToClipboard>
-            <Btn onClick={copy}>{copied}링크 복사하기</Btn>
-        </CopyToClipboard>   
+        <div>
+            <Btn onClick={success}>링크 복사하기</Btn>
+            
+        </div>
     )
 }
 

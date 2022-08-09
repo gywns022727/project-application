@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
+import { toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Clipboard(){
+    const success = () => toast.success("클립보드에 복사가 완료되었습니다.");
     return(
-        <Btn>클립보드에 복사</Btn>        
+        <Btn onClick={success}>클립보드에 복사</Btn>        
     )
 }
 

@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components';
+import { toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Clipboard(){
+    const success = () => toast.success("이미지 다운로드가 완료되었습니다.");
     return(
-        <Btn>이미지 다운로드</Btn>        
+        <Btn onClick={success}>이미지 다운로드</Btn>        
     )
 }
 
