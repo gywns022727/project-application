@@ -12,7 +12,6 @@ import { toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function Application() {
-
     const cardRef = useRef();
     const onDownloadBtn = () => {
       const card = cardRef.current;
@@ -26,8 +25,9 @@ export default function Application() {
         });
     };
 
+
+
     const DownLoad = () => toast.success("이미지 다운로드가 완료되었습니다.");
-    const Clipboard = () => toast.success("클립보드에 복사가 완료되었습니다.");
     const Link = () => toast.success("링크 복사가 완료되었습니다.");
     const url = window.location.href;
     return(
@@ -45,7 +45,6 @@ export default function Application() {
                         <Popup trigger={<OutBtn>가져가기</OutBtn>} position="top center"on="hover" >
                             <Box>
                                 <Btn onClick={function(){ DownLoad(); onDownloadBtn();}}>이미지 다운로드</Btn>
-                                <Btn onClick={Clipboard}>클립보드에 복사</Btn>
                                 <ClipboardCopy text={url} onCopy={() => url}>
                                     <Btn onClick={Link}>링크 복사하기</Btn>
                                 </ClipboardCopy>
@@ -111,7 +110,7 @@ const Box = styled.div`
     justify-content: space-evenly;
     padding: 10px;
     width: 150px;
-    height: 150px;
+    height: 100px;
     border: 5px solid white;
     color: white;
     background: #4679d6;

@@ -30,10 +30,12 @@ export default function Main(){
                     onChange={TakeChange}
                         />에게 프로젝트를 신청합니다.
             </Title>
-            <NameInput/>
-            <PersonnelInput/>
-            <NumberInput/>
-            <TextArea/>
+            <Section>
+                <NameInput/>
+                <PersonnelInput/>
+                <NumberInput/>
+                <TextArea/>
+            </Section>
             <Text>신청하는 사람<Data>{ Give }</Data>(인)</Text>
             <Text>신청받는 사람<Data>{ Take }</Data>(인)</Text>
         </Container>
@@ -46,7 +48,8 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    /* border: 1px solid #000; */
 `;
 
 const Title = styled.p`
@@ -72,6 +75,15 @@ const Input = styled.input`
         &::placeholder{
             padding: 5px;
         }
+`;
+
+const Section = styled.div`
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 `;
 
 const Text = styled.p`
