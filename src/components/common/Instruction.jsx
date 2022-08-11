@@ -2,21 +2,17 @@ import React from 'react'
 import styled from 'styled-components';
 import Popup from "reactjs-popup";
 
-const contentStyle = {
-    width: "100%",
-    height: "100%",
-    background: "rgba(0,0,0,.5)",
-  };
 
 export default function Instruction() {
     return(
         <Popup 
         trigger={
             <InstructionsBtn>사용 방법</InstructionsBtn>
-        } modal 
+        } modal position="center center"
         contentStyle={contentStyle}>
         {close => (
-          <Box>
+        <Container>
+            <Box>
             <MainTitle>사용 방법</MainTitle>
             <hr/><br/>
             <div>
@@ -29,6 +25,7 @@ export default function Instruction() {
             </div>
               <Close onClick={() => {close();}}>닫기</Close>
           </Box>
+        </Container>
         )}
       </Popup>
     )
@@ -46,18 +43,33 @@ const InstructionsBtn = styled.button`
     text-align: center;
 `;
 
+const contentStyle = {
+    width: "100%",
+    height: "100%",
+    background: "rgba(0,0,0,.5)",
+};
+
+const Container = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
 const Box = styled.div`
     position: fixed;
     z-index: 100;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 10px;
     width: 450px;
     height: 250px;
     border: 5px solid white;
     color: white;
     background: #4679d6;
+    @media screen and (max-width: 500px) {
+        width: 320px;
+        height: auto;
+    }
 `;
 
 const MainTitle = styled.h1`

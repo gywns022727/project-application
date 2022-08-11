@@ -64,6 +64,10 @@ const Box = styled.div`
     border: 5px solid white;
     color: white;
     background: #4679d6;
+    @media screen and (max-width: 700px) {
+        width: 320px;
+        height: auto;
+    }
 `;
 
 const MainTitle = styled.h1`
@@ -72,6 +76,9 @@ const MainTitle = styled.h1`
     font-size: 20px;
     font-weight: 500;
     padding-bottom: 10px;
+    @media screen and (max-width: 700px) {
+        font-size: 18px;
+    }
 `;
 
 const Warning = styled.span`
@@ -80,13 +87,20 @@ const Warning = styled.span`
 `;
 
 const Title = styled.h3`
+    font-size: 15px;
     font-weight: 400;
     color: #8ce3e9;
+    @media screen and (max-width: 700px) {
+        font-size: 14px;
+    }
 `;
 
 const Text = styled.p`
     font-size: 15px;
     font-weight: 300;
+    @media screen and (max-width: 700px) {
+        font-size: 13px;
+    }
 `;
 
 const Close = styled.button`

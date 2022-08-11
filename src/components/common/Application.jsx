@@ -34,32 +34,37 @@ export default function Application() {
     <>  
         <ToastContainer position="top-right" autoClose={1000} closeOnClick pauseOnFocusLoss={false} draggable />
         <Container>
-            <Section ref={cardRef} className='card'>
-                <Content/>
-            </Section>
+            <Div>
+                <Section ref={cardRef} className='card'>
+                    <Content/>
+                </Section>
                 <Footer>
                     <Btns>
                         <Precautions/>
                         <Instruction/>
                         <Popup trigger={<OutBtn>가져가기</OutBtn>} position="top center"on="hover" >
-                        <Box>
-                            <Btn onClick={function(){ DownLoad(); onDownloadBtn();}}>이미지 다운로드</Btn>
-                            <Btn onClick={Clipboard}>클립보드에 복사</Btn>
-                            <ClipboardCopy text={url} onCopy={() => url}>
-                                <Btn onClick={Link}>링크 복사하기</Btn>
-                            </ClipboardCopy>
-                        </Box>
+                            <Box>
+                                <Btn onClick={function(){ DownLoad(); onDownloadBtn();}}>이미지 다운로드</Btn>
+                                <Btn onClick={Clipboard}>클립보드에 복사</Btn>
+                                <ClipboardCopy text={url} onCopy={() => url}>
+                                    <Btn onClick={Link}>링크 복사하기</Btn>
+                                </ClipboardCopy>
+                            </Box>
                         </Popup>
                     </Btns>
                 </Footer>
+            </Div>
         </Container>
     </>
     );
 }
 
+const Div = styled.div`
+    padding: 10px;
+    margin: 10px;
+`
 
  const Container = styled.div`
-    margin: 0 auto;
     width: 100vw;
     height: 100vh;
     display: flex;
