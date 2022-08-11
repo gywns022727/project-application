@@ -50,6 +50,7 @@ const Container = styled.div`
 `;
 
 const Title = styled.p`
+    width: 100%;
     color: white;
     font-size: 15px;
     font-weight: 300;
@@ -74,14 +75,18 @@ const Input = styled.input`
 `;
 
 const Text = styled.p`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
     text-align: center;
     font-style: 12px;
     font-weight: 300;
     color: white;
 `;
 
-const Data = styled.strong`
-    display: inline-block;
+const Data = styled.span`
     width: 150px;
     text-align: center;
     font-weight: 400;

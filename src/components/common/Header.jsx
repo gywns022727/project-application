@@ -4,37 +4,29 @@ import styled from 'styled-components';
 export default function Header() {
   return (
     <Container>
-      <Head>
-         <Logo  src="/images/schoolLogo.png"/>
-        <Title>프로젝트 신청서</Title>
-        <Logo  src="/images/schoolLogo.png"/>
-      </Head>
+        <Title><Logo  src="/images/schoolLogo.png"/>프로젝트 신청서<Logo  src="/images/schoolLogo.png"/></Title>
     </Container>
   )
 };
 
 const Container = styled.header`
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 
-const Head = styled.div`
-  display: flex;
-  height: 50px;
-`
-
 const Title = styled.h1`
-    height: 50px;
-    color: white;
-    padding: 0 5px 0 5px;
-    font-size: 2.3rem;
-    font-weight: 500;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 5px 0 5px;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
 `;
 
 const Logo = styled.img`
     width: 50px;
-    height: 50px;
+    margin: 0 5px 0 5px;
 `;

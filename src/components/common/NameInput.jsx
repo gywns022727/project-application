@@ -19,6 +19,7 @@ const Container = styled.div`
 `;
 
 const Title =  styled.p`
+    width: 30px;
     padding-right: 20px;
     color: white;
     font-size: 15px;
