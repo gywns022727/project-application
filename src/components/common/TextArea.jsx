@@ -12,11 +12,11 @@ export default function TextArea(){
 };
 
 const Container = styled.div`
+    width: 400px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 80px;
 `;
 
 const Title = styled.p`

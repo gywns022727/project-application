@@ -49,7 +49,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
 `;
 
 const Title = styled.p`
