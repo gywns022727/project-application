@@ -10,7 +10,7 @@ export default function NameInput() {
       <Input
         type={"text"}
         placeholder="프로젝트 명을 입력해주세요"
-        autoComplete="off"
+        autoComplete={"off"}
       />
     </Container>
   );

@@ -20,7 +20,7 @@ export default function Main() {
           value={Give}
           maxLength={3}
           onChange={GiveChange}
-          autoComplete="off"
+          autoComplete={"off"}
         />
         이/가
         <Input
@@ -29,7 +29,7 @@ export default function Main() {
           value={Take}
           maxLength={3}
           onChange={TakeChange}
-          autoComplete="off"
+          autoComplete={"off"}
         />
         에게 프로젝트를 신청합니다.
       </Title>

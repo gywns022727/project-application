@@ -1,16 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import CheckBox from "components/common/CheckBox";
+import { useForm } from "react-hook-form";
 
 export default function NumberInput() {
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  const handleNumber = (e) => {
+    let { value } = e.target;
+
+    if (value.length === 11) {
+      console.log("11");
+      console.log(value);
+      value = value.replace(/(\d{3})(\d{4})(\d{4})/, "$1-$2-$3");
+      console.log(value);
+    } else if (value.length === 13) {
+      console.log("13");
+      value = value
+        .replace(/-/g, "")
+        .replace(/(\d{3})(\d{4})(\d{4})/, "$1-$2-$3");
+    }
+
+    setPhoneNumber(value);
+  };
+  const { register } = useForm();
+
   return (
     <Container>
       <CheckBox />
       <Title> 번호</Title>
       <Input
-        type={"text"}
+        type="text"
+        name="phoneNumber"
+        minLength={13}
+        maxLength={13}
+        value={phoneNumber}
         placeholder="PM의 번호를 적어주세요"
-        autoComplete="off"
+        autoComplete={"off"}
+        {...register("phoneNumber", {
+          onChange: (e) => {
+            handleNumber(e);
+          },
+        })}
       />
     </Container>
   );

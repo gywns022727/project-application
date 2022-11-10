@@ -10,7 +10,7 @@ export default function PersonnelSelect() {
       <Input
         type={"text"}
         placeholder="참여 인원을 적어주세요"
-        autoComplete="off"
+        autoComplete={"off"}
       />
     </Container>
   );
