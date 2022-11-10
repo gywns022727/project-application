@@ -1,13 +1,17 @@
-import React from 'react'
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 export default function Header() {
   return (
     <Container>
-        <Title><Logo  src="/images/schoolLogo.png"/>프로젝트 신청서<Logo  src="/images/schoolLogo.png"/></Title>
+      <Title>
+        <Logo src="/images/schoolLogo.png" />
+        프로젝트 신청서
+        <Logo src="/images/schoolLogo.png" />
+      </Title>
     </Container>
-  )
-};
+  );
+}
 
 const Container = styled.header`
   width: 100%;
@@ -27,6 +31,6 @@ const Title = styled.h1`
 `;
 
 const Logo = styled.img`
-    width: 50px;
-    margin: 0 5px 0 5px;
+  width: 50px;
+  margin: 0 5px 0 5px;
 `;
