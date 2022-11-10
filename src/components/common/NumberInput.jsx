@@ -10,12 +10,8 @@ export default function NumberInput() {
     let { value } = e.target;
 
     if (value.length === 11) {
-      console.log("11");
-      console.log(value);
       value = value.replace(/(\d{3})(\d{4})(\d{4})/, "$1-$2-$3");
-      console.log(value);
     } else if (value.length === 13) {
-      console.log("13");
       value = value
         .replace(/-/g, "")
         .replace(/(\d{3})(\d{4})(\d{4})/, "$1-$2-$3");
